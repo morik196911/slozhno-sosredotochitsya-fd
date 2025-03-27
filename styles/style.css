@@ -21,6 +21,7 @@
   grid-template-rows: 1fr min-content 1fr;
   justify-items: end;
   align-items: center;
+  border: 1px solid red;
 }
 
 .header__rec {
@@ -86,7 +87,6 @@
 }
 
 .header__theme-menu-button {
-  --main-line-height: 18px;
   border: none;
   background-color: transparent;
   font-weight: 400;
@@ -97,6 +97,16 @@
   padding-inline-end: 13px;
   padding-block-end: 1.5px;
   padding-inline-start: 13px;
+}
+
+.header__theme-menu-button:hover {
+  border: 1px solid var(--nav-hover-color, rgba(255, 0, 112, 0.4));
+}
+
+.header__theme-menu-button:focus {
+  outline: none ;
+  border: none;
+  border-bottom: 1px solid var(--nav-color, rgba(255, 0, 112, 1));
 }
 
 .header__theme-menu-button_type_dark {
@@ -121,6 +131,7 @@
   margin-block-start: calc(4 * var(--main-gap, 10px));
   display: grid;
   gap: calc(5 * var(--main-gap, 10px));
+  border: 1px solid green;
 }
 
 .content-section__title {
@@ -140,6 +151,23 @@
   font-size: var(--main-text-size, 18px);
   line-height: var(--main-line-height, 23.4px);
   color: var(--main-text-color, rgba(241, 178, 206, 1));
+}
+
+.text-block__link {
+  font-weight: 400;
+  font-size: var(--main-text-size, 18px);
+  line-height: var(--main-line-height, 23.4px);
+  color: var(--main-text-color, rgba(241, 178, 206, 1));
+  text-shadow: 2px 2px 0 var(--accent-color);
+  text-decoration: none;
+}
+
+.text-block__link:hover {
+ border-bottom: 1px solid var(--main-text-color, rgba(241, 178, 206, 1));
+}
+
+.text-block__link:focus {
+  outline: 1px solid var(--main-text-color, rgba(241, 178, 206, 1)) ;
 }
 
 .text-block__title {
@@ -187,7 +215,6 @@
   margin-block-start: calc(4 * var(--main-gap, 10px));
   display: grid;
   place-items: center;
-  border: 1px solid yellow;
 }
 
 .footer__title {
@@ -196,5 +223,26 @@
   line-height: 83%;
   color: var(--footer-logo-color, rgba(219, 0, 255, 1));
   text-shadow: 2px 2px 0 var(--accent-color, rgba(255, 0, 112, 1));
+}
+
+@media (width >= 768px) {
+  
+  .header {
+    min-block-size: 1024px;
+  }
+
+  .header__title {
+    justify-self: start;
+  }
+ 
+  .content {
+    gap: calc(6 * var(--main-gap, 10px));
+  }
+
+}
+
+@media (width >= 1024px) {
+
+
 }
 

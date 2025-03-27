@@ -21,3 +21,11 @@
   --footer-logo-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   --footer-logo-color: rgba(219, 0, 255, 1);
 }
+
+@media (width >= 768px) {
+
+}
+
+@media (width >= 1024px) {
+
+}
