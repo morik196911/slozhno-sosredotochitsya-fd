@@ -9,8 +9,76 @@
     Так стили написанные ниже будут иметь больший вес,
     чем стили в медиазапросе предпочтений пользователя
   */
+  --accent-color:rgba(255, 141, 203, 1);
+  --bg-image: url(../images/cover-image-light.png);
+  --main-text-color: rgba(53, 52, 48, 1);
+  --nav-color: rgba(53, 52, 48, 1);
+  --nav-hover-color: rgba(50, 49, 45, 0.4);
+  --main-heading-color: rgba(53, 52, 48, 1);
+  --main-title-color: rgba(53, 52, 48, 1);
+  --section-heading-color: rgba(53, 52, 48, 1);
+  --header-logo-color: rgba(255, 194, 230, 1);
+  --footer-logo-color: rgba(255, 194, 230, 1);
 }
 
-.theme-light .page {
-  /* Вам также нужно будет написать ряд подобных селекторов */
+.theme-light .header__rec {
+  display: none;
+}
+
+.theme-light .header__theme-menu-button_type_light {
+  border: 1px solid var(--nav-color);
+}
+
+.theme-light .header__theme-menu-button:hover {
+  border: 1px solid var(--nav-hover-color);
+}
+
+.theme-light .header__theme-menu-button:focus {
+  outline: none ;
+  border: none;
+}
+
+.theme-light .header__theme-menu-button:focus-visible {
+  border-bottom: 1px solid var(--nav-color);
+}
+
+.theme-light .header__theme-menu-button_type_dark {
+  border: none;
+}
+
+.theme-light .text-block__link {
+  font-weight: 400;
+  font-size: var(--main-text-size);
+  line-height: var(--main-line-height);
+  color: var(--main-text-color, rgba(241, 178, 206, 1));
+  text-shadow: 2px 2px 0 var(--accent-color);
+  text-decoration: none;
+}
+
+.theme-light .text-block__link:hover {
+ border-bottom: 1px solid var(--main-text-color);
+}
+
+.theme-light .text-block__link:focus-visible {
+  outline: 1px solid var(--main-text-color);
+}
+
+@media (prefers-color-scheme:light) {
+  :root {
+    --accent-color:rgba(255, 141, 203, 1);
+    --bg-image: url(../images/cover-image-light.png);
+    --main-text-color: rgba(53, 52, 48, 1);
+    --nav-color: rgba(53, 52, 48, 1);
+    --nav-hover-color: rgba(50, 49, 45, 0.4);
+    --main-heading-color: rgba(53, 52, 48, 1);
+    --main-title-color: rgba(53, 52, 48, 1);
+    --section-heading-color: rgba(53, 52, 48, 1);
+    --header-logo-color: rgba(255, 194, 230, 1);
+    --footer-logo-color: rgba(255, 194, 230, 1);
+  }
+
+  .header__rec {
+    display: none;
+  }
+
 }
