@@ -16,8 +16,6 @@
   --main-gap: 10px;
   --main-text-size: 18px;
   --main-line-height: 23.4px;
-  --header-rec-position: 38px;
-  --header-point-position: -19px;
   --header-logo-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);/* 116-120px*/
   --header-logo-color: rgba(219, 0, 255, 1);
   --footer-logo-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
@@ -29,7 +27,6 @@
   --main-gap: 20px;
   --header-logo-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem) ;
   --footer-logo-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem) ;
-  --header-rec-position: 48px;
  }
 }
 
