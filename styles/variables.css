@@ -3,8 +3,8 @@
   и их переопределение под различные устройства
 */
 :root {
-  --main-font-family: 'IBM Plex mono', monospace;
-  --accent-color:rgba(255, 0, 112, 1);
+  --main-font-family: "IBM Plex mono", monospace;
+  --accent-color: rgba(255, 0, 112, 1);
   --bg-image: url(../images/cover-image-dark.png);
   --main-text-color: rgba(241, 178, 206, 1);
   --nav-color: rgba(255, 0, 112, 1);
@@ -16,17 +16,20 @@
   --main-gap: 10px;
   --main-text-size: 18px;
   --main-line-height: 23.4px;
-  --header-logo-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);/* 116-120px*/
+  --header-logo-size: clamp(
+    7.25rem,
+    7.0115rem + 1.0178vw,
+    7.5rem
+  ); /* 116-120px*/
   --header-logo-color: rgba(219, 0, 255, 1);
   --footer-logo-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   --footer-logo-color: rgba(219, 0, 255, 1);
 }
 
 @media (width >= 768px) {
- :root {
-  --main-gap: 20px;
-  --header-logo-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem) ;
-  --footer-logo-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem) ;
- }
+  :root {
+    --main-gap: 20px;
+    --header-logo-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+    --footer-logo-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+  }
 }
-

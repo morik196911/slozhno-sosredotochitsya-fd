@@ -5,7 +5,7 @@
 */
 
 :root.theme-dark {
-  --accent-color:rgba(255, 0, 112, 1);
+  --accent-color: rgba(255, 0, 112, 1);
   --bg-image: url(../images/cover-image-dark.png);
   --main-text-color: rgba(241, 178, 206, 1);
   --nav-color: rgba(255, 0, 112, 1);
@@ -18,5 +18,5 @@
 }
 
 .theme-dark .header__rec {
-  display: block;
+  display: flex;
 }

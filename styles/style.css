@@ -31,22 +31,20 @@
   text-transform: uppercase;
   line-height: 25px;
   color: var(--accent-color);
-  display: flex;
+
   flex-direction: row;
   align-items: center;
   gap: 10px;
   inset-block-start: var(--main-gap);
-  inset-inline-end: calc(var(--main-gap) + 28px);
+  inset-inline-end: calc(var(--main-gap) + 10px);
 }
 
 .header__rec::before {
   content: "REC";
-  display: block;
 }
 
 .header__rec::after {
   content: "";
-  display: block;
   inline-size: 9px;
   block-size: 9px;
   border-radius: 50%;
@@ -135,7 +133,6 @@
   margin-block-start: calc(4 * var(--main-gap));
   display: grid;
   gap: calc(5 * var(--main-gap));
-  border: 2px solid pink;
 }
 
 .title-decor {
@@ -230,7 +227,6 @@
   margin-block-start: calc(4 * var(--main-gap));
   display: grid;
   place-items: center;
-  border: 1px solid yellow;
 }
 
 .footer__title {
@@ -242,7 +238,6 @@
 }
 
 @media (width >= 768px) {
-  
   .header {
     min-block-size: 1024px;
   }
@@ -374,4 +369,3 @@
     min-block-size: 768px;
   }
 }
-
